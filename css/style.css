@@ -75,5 +75,260 @@ header{
 }
 
 /*Header end*/
+/*Bespoke start*/
 
+.Bespoke{
+  height: 70vh;
+}
+.image_Bespoke{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../img/png/image_button_header.png") no-repeat;
+  height: 100%;
+}
+.text_Bespoke{
+  padding-left: 10.2%;
+}
+.text_Bespoke h1{
+  color: #ffffff;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 72px;
+}
+.text_Bespoke p{
+  color: #ffffff;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 18px;
+}
+.text_Bespoke button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #ffffff;
+  /*padding: 51px 46px 51px 33px ;*/
+  padding: 1%;
+  border: 3px solid #ffffff;
+  border-radius: 80px;
+  width: 32%;
+  cursor: pointer;
+  font-size: 16px;
 
+}
+.circle{
+  background: url("../img/png/more.png") no-repeat;
+  background: #BB3024;
+  padding:25px 30px;
+  border-radius: 50%;
+  margin-left: 10%;
+  box-shadow:0 0 10px red;
+  font-style: italic;
+}
+.circle:hover{
+  transform: scale(1.05);
+  z-index: 1;
+  transition: transform .3s;
+}
+/*Bespoke end*/
+/*garant start*/
+
+.garant{
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  width: 90%;
+}
+.garant_left {
+  background: url("../img/png/Blue_Means.png") no-repeat ;
+  height: 100%;
+  width: 200%;
+}
+.garant_right{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Muller',sans-serif;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.garant_right h2{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  color: #353535;
+}
+
+.bottom_text p{
+  margin-top: 1.5%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+/*garant end*/
+
+/*Clothing start*/
+
+.clothing{
+  height: 55vh;
+  background: url("../img/png/Ткани.png") no-repeat right;
+}
+.text_clothing{
+  padding-top: 13%;
+  margin-left: 15%;
+  color: #ffffff;
+}
+.text_clothing h2{
+  font-size: 28px;
+  padding-bottom: 1.5%;
+  font-weight: 100;
+}
+.text_clothing p {
+  max-width: 26.5%;
+  font-weight: 100;
+}
+
+/*Clothing end*/
+/*section_absolute-info start*/
+
+.section_absolute-info{
+  position: absolute;
+  top: 140%;
+  left: 25%;
+  color: #ffffff;
+  width: 55%;
+  height: 25%;
+  border: 1px solid #7E7E7E;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.8); /* Черный цвет с 50% прозрачностью */
+  backdrop-filter: blur(10px); /* Эффект размытия фона */
+}
+
+.info_block{
+  display: flex;
+}
+
+.info_block:first-child{
+  margin-left: 10%;
+}
+.info_absolute2{
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 22%;
+}
+.info_absolute3{
+  margin-left: 15%;
+  margin-top: 5%;
+  width: 20%;
+}
+.info_absolute{
+  margin-top: 5%;
+  width: 20%;
+}
+.info_absolute p{
+  margin-top: 5%;
+}
+.info_absolute2 p{
+  margin-top: 5%;
+}
+.info_absolute3 p{
+  margin-top: 5%;
+}
+/*section_absolute-info end*/
+/*work start*/
+
+.work{
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  height: 72vh;
+  width: 100%;
+}
+.text_work-block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30%;
+  margin-left: 20%;
+  width: 70%;
+}
+.text_work-block h2{
+  font-size: 32px;
+  font-weight: 100;
+  color: #353535;
+}
+.text_work-block p{
+  margin-top: 3%;
+  color: #414141;
+}
+/*work end*/
+/*work_thing start*/
+
+.work_thing{
+  position: absolute;
+  top: 258%;
+  left: 16%;
+  width: 83.91%;
+  color: #ffffff;
+  border: 1px solid #7E7E7E;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.8); /* Черный цвет с 50% прозрачностью */
+  backdrop-filter: blur(10px); /* Эффект размытия фона */
+  border-right: none;
+  z-index: 5;
+}
+.flex_work_box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work_thing-text h2{
+  font-size: 32px;
+  font-weight: 100;
+}
+.work_thing-text p{
+  margin-top: 2%;
+  width: 60%;
+}
+
+/*work_thing end*/
+/*Technology start*/
+
+.technology{
+  height: 68.7vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.technology_fon{
+  width: 35%;
+  height: 100%;
+  background: #000000;
+  box-shadow: 150px 0 40px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+.technology_image{
+  width: 75%;
+  height: 100%;
+  background: url("../img/png/work_maket.png") no-repeat;
+}
+.text_technology{
+  margin-top: 65%;
+  margin-left: 70%;
+  color: #ffffff;
+
+  min-width: 70%;
+}
+.text_technology h2{
+  font-size: 30px;
+  font-weight: 100;
+}
+.text_technology p{
+  margin-top: 5%;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+/*Technology end*/
