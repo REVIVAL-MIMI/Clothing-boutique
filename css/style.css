@@ -355,7 +355,7 @@ main{
 }
 
 .left-man-img{
-    background: url(../images/png/man-left.png);
+    background: url(../img/png/man-left.png);
     width:50%;
     height:100%;
 }
@@ -374,6 +374,17 @@ main{
     text-transform: uppercase;
     color: #353535;
 }
+
+.text-left a{
+    transition: 10s;
+
+}
+
+.text-left a:hover{
+    text-transform: scale(10);
+}
+
+
 .text-left a{
     font-weight: 400;
     font-size: 19px;
@@ -389,7 +400,7 @@ main{
 
 
 .right-man-img{
-    background: url(../images/png/woman-right.png);
+    background: url(../img/png/woman-right.png);
     width:50%;
     height:100%;
     text-align: right;
