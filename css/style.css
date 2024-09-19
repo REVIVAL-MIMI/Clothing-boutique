@@ -922,8 +922,10 @@ footer{
   align-items: center;
 }
 .Sewing_info{
-  width: 44%;
-  height: 35%;
+  /*width: 44%;*/
+  /*height: 35%;*/
+  height: 341px;
+  width: 750px;
   display: flex;
   flex-direction: column;
   background: #FBFBFB;
@@ -959,13 +961,14 @@ footer{
   margin-bottom: 3%;
 }
 .info_people input{
-  width: 321px;
+  width: 290px;
   height: 40px;
   padding: 10px 20px;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  color: #7e7e7e;border: 1px solid #d9d9d9;
+  color: #000000;
+  border: 1px solid #d9d9d9;
   border-radius: 5px;
 }
 .great{
@@ -973,16 +976,20 @@ footer{
   justify-content: space-evenly;
   align-items: center;
 }
-.great p{
+.great_radio{
+  display: flex;
+
+}
+.great_radio p{
   font-weight: 400;
   font-size: 16px;
-  margin-right: 10%;
 }
-.great input{
+.great_radio input{
   accent-color: #BB3024;
   padding: 5px;
   border: 4px solid #7e7e7e;
   background: #000000;
+  margin-right: 20px;
 }
 .Sewing_button{
   font-weight: 500;
@@ -990,6 +997,7 @@ footer{
   line-height: 140%;
   text-transform: uppercase;
   color: #353535;
+  margin-right: -50px;
 }
 .Sewing_button button{
   width: 325px;
@@ -1018,8 +1026,30 @@ footer{
   background: #BB3024;
   box-shadow:0 0 10px red;
 }
-@media (max-width: 1328px) {
-
+@media (max-width: 800px) {
+  .Sewing_info a{
+    margin-left: 85%;
+  }
+  .Sewing_info{
+    width: 360px;
+    height: 517px;
+  }
+  .info_people{
+    display: flex;
+    flex-direction: column;
+  }
+  .info_people input{
+    margin-top: 10px;
+  }
+  .great{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .Sewing_button{
+    margin-top: 20px;
+    margin-left: -50px;
+  }
 }
 
 /*Sewing end*/
