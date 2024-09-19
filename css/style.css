@@ -1053,4 +1053,117 @@ span {
     opacity: 0.6;
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+    height: 90%;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+    height: 90%;
+}
+
+.parfume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    border-radius: 72px;
+    width: 181px;
+    height: 64px;
+}
+
+.parfume p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.text1 {
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 120%;
+    text-align: right;
+    color: #fff;
+    margin-bottom: 2vh;
+}
+
+.look-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    text-underline-offset: 60%;
+    text-decoration-thickness: 100px;
+    margin-bottom: 3vh;
+    margin-right: 1vw;
+}
+
+.look-btn a {
+    color: #fff;
+
+}
+
+.smell-of-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 72px;
+    width: 181px;
+    height: 64px;
+
+}
+
+.smell-of-month p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+
+
+.text2{
+    font-weight: 300;
+font-size: 35px;
+line-height: 120%;
+color: #fff;
+margin-bottom: 2vh;
+}
+
+.look-btn2{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    text-underline-offset: 60%;
+    text-decoration-thickness: 100px;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+}
+
+.look-btn2 a{
+    color: #ffffff     ;
 }
