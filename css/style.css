@@ -43,6 +43,99 @@ header{
     padding-top: 1.3vh;
 
 }
+/*Burger start*/
+
+.menu{
+  display: none;
+}
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger{
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger:last-child{
+  width: 20px;
+}
+.logo_burger{
+  margin-left: 20px;
+}
+.line_burger{
+  width: 100%;
+  border: 0.50px solid #d9d9d9;
+}
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0,0,0,0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: #ffffff;
+  text-transform: uppercase;
+  list-style-type: none;
+  transform: translateX(-100%);
+  transition: .3s;
+  width: 100%;
+}
+.menu-item {
+  display: block;
+  padding: 8px;
+  color: #000000;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.menu-item:hover {
+  background: rgba(255,255,255,.2)
+}
+.burger-checkbox:checked ~ .menu-list {
+  transform: translateX(0);
+}
+
+
+/*Burger end*/
 .logo a{
     transition: .5s;
 }
@@ -194,6 +287,33 @@ header{
   left:0;
   margin-top: 3%;
   padding-right: 4%;
+}
+.footer_burger{
+  display: flex;
+  justify-content: space-around;
+}
+.map_burger{
+  margin-top: 10px;
+  width: 50%;
+}
+.map_burger p{
+  margin-bottom: 15px;
+}
+.map_burger a{
+  color: #bb3024;
+  text-underline-offset: 3px;
+}
+.contact_burger{
+  margin-top: 10px;
+}
+.icon_burger{
+  margin-bottom: 5px;
+}
+.icon_burger img{
+  margin-right: 5px;
+}
+.contact_burger p{
+  margin-bottom: 5px;
 }
 
 /*Header end*/
@@ -735,13 +855,13 @@ header{
 /*footer start*/
 
 footer{
-    display: flex;
-    font-weight: normal;
-    font-style: normal;
-    width: 100%;
-    height: 10vh;
-    border-top: 1px solid rgba(0,0,0,.1);
-
+  display: flex;
+  font-weight: normal;
+  font-style: normal;
+  width: 100%;
+  height: 10vh;
+  border-top: 1px solid rgba(0,0,0,.1);
+  margin-top: 30px;
 }
 
 .logo_footer{
@@ -763,7 +883,7 @@ footer{
     transform: scale(1.1);
 }
 
-.internet-shop{
+.internet-shop_footer{
   font-size: 1rem;
   font-family: 'Muller';
   display: flex;
@@ -774,17 +894,17 @@ footer{
   height:100%;
 }
 
-.internet-shop a{
+.internet-shop_footer a{
   text-decoration: none;
   color:black;
   text-transform: uppercase;
 }
 
-.internet-shop a:hover{
+.internet-shop_footer a:hover{
   color: rgb(104, 96, 96);
 }
 
-.price-cards{
+.price-cards_footer{
   display: flex;
   justify-content: center;
   width:10%;
@@ -792,19 +912,19 @@ footer{
   border-right: 1px solid rgba(0,0,0,.1);
 }
 
-.price-cards a{
+.price-cards_footer a{
   text-decoration: none;
   color:black;
   text-transform: uppercase;
 
 }
 
-.price-cards a:hover{
+.price-cards_footer a:hover{
   color: rgb(104, 96, 96);
 
 }
 
-.espechial-order{
+.espechial-order_footer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -813,19 +933,19 @@ footer{
   border-right: 1px solid rgba(0,0,0,.1);
 }
 
-.espechial-order a{
+.espechial-order_footer a{
   text-decoration: none;
   color:black;
   text-transform: uppercase;
 
 }
 
-.espechial-order a:hover{
+.espechial-order_footer a:hover{
   color: rgb(104, 96, 96);
 
 }
 
-.stiles-makers{
+.stiles-makers_footer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -834,19 +954,19 @@ footer{
   border-right: 1px solid rgba(0,0,0,.1);
 }
 
-.stiles-makers a{
+.stiles-makers_footer a{
   text-decoration: none;
   color:black;
   text-transform: uppercase;
 
 }
 
-.stiles-makers a:hover{
+.stiles-makers_footer a:hover{
   color: rgb(104, 96, 96);
 
 }
 
-.location-logo{
+.location-logo_footer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -854,56 +974,57 @@ footer{
   width: 3%;
 }
 
-.location{
+.location_footer{
   width:15%;
   height:100%;
 }
 
-.location{
+.location_footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 
-.location-link-mg{
+.location-link-mg_footer{
   margin-top: 2%;
   text-decoration: underline;
   text-underline-offset: 3px;
   font-size: 14px;
   margin-top: 6%;
 }
-.location-link-mg a{
+.location-link-mg_footer a{
   color:red;
   text-transform: lowercase;
 
 }
 
-.location-link-mg a:hover{
+.location-link-mg_footer a:hover{
   color:brown
 }
 
-.contacts-icon{
+.contacts-icon_footer{
   width:10%;
   height:100%;
 }
 
-.contacts-icon{
+.contacts-icon_footer{
   display: flex;
   justify-content: center;
   align-items: center;
 
 }
-.contacts{
+.contacts_footer{
   display: flex;
   flex-direction: column;
   flex-direction: column-reverse;
 }
-.icons{
-  margin-top: 3%;
+.icons_footer{
+  margin-top: 30px;
   margin-bottom: 3%;
 }
 
-.icons a{
+.icons_footer a{
   left:0;
   margin-top: 3%;
   padding-right: 4%;
@@ -1051,5 +1172,24 @@ footer{
     margin-left: -50px;
   }
 }
+@media(max-width: 1560px){
+  .internet-shop,.price-cards,.espechial-order,.stiles-makers,.location,.contacts-icon,.location-logo{
+    display: none;
+  }
+  .menu{
+    display: initial;
+    margin-left: 70%;
+    margin-top: 45px;
+    text-transform: lowercase;
+  }
+  .logo{
+    border: none;
+  }
 
+}
+@media(max-width: 680px){
+  .menu p{
+    font-size: 13px;
+  }
+}
 /*Sewing end*/
