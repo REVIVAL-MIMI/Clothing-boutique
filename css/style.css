@@ -1182,10 +1182,119 @@ footer{
     margin-top: 45px;
     text-transform: lowercase;
   }
+  .internet-shop_footer,.price-cards_footer,.espechial-order_footer,.stiles-makers_footer,.stiles-makers_footer{
+    display: none;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 25%;
+    height: 330px;
+    border-top: 1px solid rgba(0,0,0,.1);
+  }
+  .logo_footer{
+    border: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
   .logo{
     border: none;
+    align-content: center;
   }
+  .location-logo_footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+  .location-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contacts-icon_footer{
+    margin-top: 10px;
+  }
+  .location_footer{
+    width: 100%;
+    align-content: center;
+  }
+  .contacts_footer{
+    width: 100%;
+  }
+  .contacts_footer p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+  }
+  .icons_footer{
+    width: 100%;
+    min-width: 300px;
+  }
+  .last_slide{
+    display: none;
+  }
+    .text_Bespoke button {
+    width: 350px;
+  }
+}
+@media(max-width: 992px){
+  .text_work-block{
+    position: absolute;
+  }
+  .text_work-block h2{
+    color: #ffffff;
+  }
+  .text_work-block p{
+    color: #ffffff;
+    width: 400px;
+  }
+  .text_clothing h2{
+    margin-top: 10%;
+  }
+  .section_absolute-info{
+    width: 70%;
+  }
+  .garant_left{
+    width: 400%;
+    text-align: center;
+    margin-left: -250px;
+  }
+  .work_thing{
+    top: 270%;
+  }
+  .text_technology{
+    width: 100%;
+  }
+  .grid_processing {
+    grid-column-gap: 15%;
+  }
+  .right_more-processing button{
+    width: 300px;
+  }
+  .left_more-processing{
+    font-size: 14px;
+    padding-left: 30px;
+    width: 55%;
+  }
+  .logo_footer{
+    margin-top: 50px;
+  }
+  .work_thing-text h2{
+    margin-left: 100px;
+  }
+  .contacts_footer p{
+    min-width: 200px;
+    margin-left: -20px;
+  }
 }
 @media(max-width: 680px){
   .menu p{
