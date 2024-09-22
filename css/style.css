@@ -70,8 +70,9 @@ header{
   margin-left: 20px;
 }
 .line_burger{
+  height: 0.5px;
   width: 100%;
-  border: 0.50px solid #d9d9d9;
+  background: #d9d9d9;
 }
 .burger::before,
 .burger::after {
@@ -118,6 +119,7 @@ header{
   transform: translateX(-100%);
   transition: .3s;
   width: 100%;
+  height: 75%;
 }
 .menu-item {
   display: block;
@@ -1147,6 +1149,7 @@ footer{
   background: #BB3024;
   box-shadow:0 0 10px red;
 }
+/*Sewing end*/
 @media (max-width: 800px) {
   .Sewing_info a{
     margin-left: 85%;
@@ -1237,13 +1240,50 @@ footer{
   }
   .icons_footer{
     width: 100%;
-    min-width: 300px;
+    min-width: 150px;
   }
   .last_slide{
     display: none;
   }
     .text_Bespoke button {
     width: 350px;
+  }
+}
+@media(max-width: 1400px){
+  .text_work-block{
+    position: absolute;
+    margin-top: 10%;
+  }
+  .text_work-block h2{
+    color: #ffffff;
+  }
+  .text_work-block p{
+    color: #ffffff;
+    width: 400px;
+  }
+  .text_clothing h2{
+    margin-top: 13%;
+  }
+  .work_right{
+    width: 100%;
+  }
+  .work_right img{
+    width: 100%;
+    height: 100%;
+  }
+  .section_absolute-info{
+    width: 70%;
+  }
+  .work_thing-text h2{
+    margin-left: 20%;
+  }
+  .left_more-processing {
+    font-size: 14px;
+    padding-left: 30px;
+    width: 55%;
+  }
+  .right_more-processing button {
+    width: 300px;
   }
 }
 @media(max-width: 992px){
@@ -1261,7 +1301,8 @@ footer{
     margin-top: 10%;
   }
   .section_absolute-info{
-    width: 70%;
+    width: 90%;
+    left: 5%;
   }
   .garant_left{
     width: 400%;
@@ -1295,10 +1336,238 @@ footer{
     min-width: 200px;
     margin-left: -20px;
   }
+  .work_thing{
+    width: 100%;
+    left: 0;
+  }
+  .work_thing-text h2{
+    margin-left: 20%;
+  }
+  .work_thing img{
+    width: 100%;
+    height: 100%;
+  }
+  .text_technology p{
+    min-width: 150%;
+  }
+  .more_grid-processing {
+    width: 100%;
+    margin-left: 0;
+  }
+  .image_Bespoke{
+    background: url(../img/png/image_button_header.png) no-repeat center;
+  }
 }
-@media(max-width: 680px){
+@media(max-width: 768px){
   .menu p{
     font-size: 13px;
   }
+  .garant_left{
+    display: none;
+  }
+  .section_absolute-info{
+    left: 0;
+    width: 100%;
+  }
+  .text_clothing h2{
+    margin-top:20%;
+  }
+  .text_clothing p{
+    max-width: 80%;
+  }
+  .work_thing{
+    width: 100%;
+    left: 0;
+  }
+  .text_work-block h2{
+    margin-top: 20%;
+  }
+  .grid_processing{
+    grid-template-columns: repeat(2, 3fr)
+  }
+  .more_grid-processing{
+    margin-top: 40%;
+  }
+  footer{
+    margin-top: 40%;
+  }
+  .logo_footer{
+    margin-top: 10%;
+  }
+  .technology_fon{
+    width: 10%;
+    height: 100%;
+    background: #000000;
+    box-shadow: 50px 0 30px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+  }
+  .technology_image{
+    width: 90%;
+    background: url(../img/png/work_maket.png) no-repeat left;
+  }
+  .text_technology h2{
+    margin-top: 150px;
+  }
+  .text_technology p{
+   min-width: 300px;
+  }
 }
-/*Sewing end*/
+@media(max-width: 730px){
+  .more_grid-processing{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    margin-left: 20%;
+    margin-top: 50%;
+  }
+  footer{
+    margin-top: 60%;
+  }
+  .left_more-processing {
+    font-size: 14px;
+    width: 90%;
+  }
+  .left_more-processing p{
+    margin-top: 20%;
+    font-size: 16px;
+  }
+  .right_more-processing{
+    width: 100%;
+  }
+  .right_more-processing button{
+    width: 380px;
+    margin-top: 70px;
+  }
+  footer{
+    margin-top: 80%;
+  }
+  .icons_footer{
+    margin-right: 0;
+  }
+}
+@media(max-width: 630px){
+  .logo{
+    margin-left: 90px;
+  }
+  .menu{
+    margin-left: 55%;
+  }
+}
+@media(max-width: 530px){
+  .text_Bespoke{
+    padding-left: 15%;
+    margin-top: 125%;
+  }
+  .text_Bespoke button{
+    border: 1px solid #d9d9d9;
+  }
+  .info_block{
+    flex-direction: column;
+  }
+  .garant{
+    height: 85vh;
+  }
+  .garant_right{
+    margin-top: 20%;
+  }
+  .section_absolute-info {
+    position: static;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .info_block:first-child{
+    margin-left: 0;
+  }
+  .info_block:last-child{
+    margin-bottom: 20px;
+  }
+  .work{
+    height: 50vh;
+    margin-bottom: -200px;
+  }
+  .work_thing{
+    position: static;
+    display: flex;
+    height: 500px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 40px;
+    margin-top: -100px;
+  }
+  .work_thing-text{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-top: 70px;
+    margin-left: 40px;
+  }
+  .work_thing-text p{
+     width: 80%;
+  }
+  .flex_work_box{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .work_thing-text h2{
+    margin: 0;
+  }
+  .info_absolute{
+    margin-left: 25%;
+    width: 50%;
+  }
+  .info_absolute2{
+    margin-left: 25%;
+    width: 50%;
+  }
+  .info_absolute3{
+    margin-left: 25%;
+    width: 50%;
+  }
+  .technology_fon{
+    width: 0;
+  }
+  .technology_image{
+    width: 100%;
+    height: 50vh;
+  }
+  .text_technology{
+    margin-left: 100px;
+  }
+  .text_technology h2{
+    margin-bottom: 15px;
+  }
+  .grid_processing {
+    grid-template-columns: repeat(1, 6fr);
+  }
+  .more_grid-processing{
+    margin-top: 300%;
+    margin-left: 50px;
+  }
+  footer{
+    margin-top: 350%;
+  }
+}
+@media(max-width: 450px){
+  .more_grid-processing{
+    margin-top: 320%;
+    margin-left: 20px;
+  }
+  .work_thing img{
+    width: 100%;
+  }
+  .work_thing-text h2{
+    font-size: 20px;
+  }
+  .text_work-block p{
+    width: 300px;
+  }
+  .menu {
+    margin-left: 50%;
+  }
+}
